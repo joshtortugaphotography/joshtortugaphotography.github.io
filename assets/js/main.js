@@ -81,3 +81,17 @@
 		}
 
 })(jQuery);
+
+// Simple Lightbox for Portfolio Images
+$(document).ready(function() {
+  $('.lightbox').on('click', function(e) {
+    e.preventDefault();
+    var imgSrc = $(this).attr('href');
+    $('#lightbox-img').attr('src', imgSrc);
+    $('#lightbox-modal').fadeIn(200);
+  });
+  $('#lightbox-modal').on('click', function() {
+    $(this).fadeOut(200);
+    $('#lightbox-img').attr('src', '');
+  });
+});
