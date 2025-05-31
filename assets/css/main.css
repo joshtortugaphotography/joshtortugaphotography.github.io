@@ -4102,13 +4102,13 @@ image.ugg {
   display: none;
   position: fixed;
   left: 0;
-  top: 3em; /* Offset for the fixed header */
+  top: 0em; /* Offset for the fixed header */
   width: 100vw;
-  height: calc(100vh - 3em); /* Subtract header height */
+  height: calc(100vh - 0em); /* Subtract header height */
   background: rgba(0,0,0,0.85);
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Below the header's z-index of 10000 */
+  z-index: 1000; /* Below the header's z-index of 10000 */
   cursor: pointer;
 }
 
