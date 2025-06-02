@@ -4099,7 +4099,7 @@ image.ugg {
 }
 
 #lightbox-modal {
-  display: none;
+  display: flex;
   position: static;
   left: 0;
   top: 0em; /* Offset for the fixed header */
@@ -4115,7 +4115,7 @@ image.ugg {
 #lightbox-modal img {
   max-width: 90vw;
   max-height: 90vh;
-  padding: 4em ;
+  padding: 2vh 0;
   display: block;
   margin: auto;
 }
